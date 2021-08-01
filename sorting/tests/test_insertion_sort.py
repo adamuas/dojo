@@ -12,12 +12,12 @@ def test_sorted():
     assert arr == sort_by_insertion_sort(arr)['result'] 
 
 
-def test_unsorted_unsigned():
+def test_unsorted_signed():
     # test array
     arr = array('b', [0, 2,1,3, -1])
     logging.debug(f'array: {arr}')
     # sort
-    assert array('b', [-1, 0, 1, 2, 3]) == sort_by_insertion_sort(arr)['result'] 
+    assert array('b', [-1, 0, 1, 2, 3]) == sort_by_insertion_sort(arr)['result']
 
 
      
