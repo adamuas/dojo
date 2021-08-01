@@ -1,7 +1,7 @@
 """
 @uthor: Abdullahi S. Adamu
 """
-import array
+from array import array
 from absl import logging
 from datetime import datetime
 
@@ -10,7 +10,7 @@ logging.set_verbosity(logging.DEBUG)
 def sort_by_insertion_sort(arr):
     start = datetime.now()
     # array of integers
-    _arr = array.array('i', arr)
+    _arr = array('i', arr)
 
     n  = len(arr)
     for k in range(1, n):

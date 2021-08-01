@@ -1,12 +1,19 @@
 """
 @uthor: Abdullahi S. Adamu
 """
-import array
+from array import array
 from absl import logging
 from datetime import datetime
 from queue import PriorityQueue
 
 logging.set_verbosity(logging.DEBUG)
+
+"""
+array pointers
+[{index: i, name='i'}, ]
+array state:
+[1,2,3]
+"""
 
 def sort_by_selection_sort(arr):
     """ 
@@ -17,7 +24,7 @@ def sort_by_selection_sort(arr):
     """
     start = datetime.now()
     # array of integers
-    _arr = array.array('i', arr)
+    _arr = array('i', arr)
     # nummber of elements
     n = len(_arr)
 
