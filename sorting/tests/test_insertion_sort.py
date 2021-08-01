@@ -1,3 +1,9 @@
+"""
+Tests for Insertion Sort
+
+@author: Abdullahi S. Adamu
+"""
+
 from sorting.insertion_sort import sort_by_insertion_sort
 from array import array
 from absl import logging
@@ -14,7 +20,7 @@ def test_empty():
     # assertion
     assert arr == result
 
-    
+
 def test_sorted():
     # test array
     arr = array('i', list(range(1, 100)))
