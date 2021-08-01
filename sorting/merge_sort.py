@@ -76,7 +76,3 @@ def merge_sort(arr):
     # recursively merge back
     logging.debug(f'merging into {arr_a} and {arr_b}')
     merge(arr_a, arr_b, arr)
-
-
-    return {"result": arr}
-  
